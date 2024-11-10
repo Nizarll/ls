@@ -64,7 +64,7 @@ fn void list_dir(ZString path) {
     result.append((String)entry.d_name[0..name.len()]);
     result.append(CLEAR);
     result.append("\n");
-
+    
     io::print(result);
   }
   closedir(dir);
